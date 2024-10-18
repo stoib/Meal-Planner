@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="golden_apple.png"
+                HeightRequest="200"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Golden apple logo" />
+
+            <Label
+                x:Name="DebugLabel"
+                Text="Hello, Everyone!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Welcome to the Random Meal App"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to the Random Meal App" />
+
+            <Button
+                x:Name="Manage_Ingredients_Button"
+                Text="Manage Ingredients" 
+                SemanticProperties.Hint="Opens the manage ingredients menu"
+                Clicked="ManageIngredientButtonClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="Manage_Procedures_Button"
+                Text="Manage Procedures"
+                SemanticProperties.Hint="Opens the manage procedures menu"
+                Clicked="ManageProcedureButtonClicked"/>
+            
+            <Label
+                x:Name="FrameLabel"
+                Text="Welcome to the Random Meal App"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to the Random Meal App" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

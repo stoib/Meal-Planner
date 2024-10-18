@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MauiApp1</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "F:MauiApp1.MainPage.ingredientsListID" -->
+        <member name="M:MauiApp1.MainPage.Button_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            //////////////////////////////////////////////////////
+            </summary>
+            <param ></param>
+            <param></param>
+            
+        </member>
+    </members>
+</doc>
